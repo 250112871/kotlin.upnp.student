@@ -7,7 +7,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "com.demo.android.flb.kotlin_upnp_demo"
+        applicationId "com.demo.android.flb.kotlin.upnp.demo"
         minSdkVersion 15
         targetSdkVersion 27
         versionCode 1
