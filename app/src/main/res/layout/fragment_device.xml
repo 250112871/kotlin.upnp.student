@@ -1,0 +1,49 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.demo.android.flb.demo.fragment.DeviceFragment">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_play_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dime_px2dip_100"
+        android:background="@color/title_background"
+        android:gravity="center_vertical"
+        android:text="播放器"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dime_px2sp_42" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_device"
+        app:layout_constraintBottom_toBottomOf="@id/tv_play_service"
+        app:layout_constraintTop_toBottomOf="@id/tv_play_title"
+        app:layout_constraintVertical_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dime_px2dip_1" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_play_service"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dime_px2dip_100"
+        android:background="@color/title_background"
+        android:gravity="center_vertical"
+        android:text="媒体内容服务"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dime_px2sp_42" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_service"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_play_service"
+        app:layout_constraintVertical_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dime_px2dip_1" />
+
+</android.support.constraint.ConstraintLayout>

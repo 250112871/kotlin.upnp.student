@@ -1,0 +1,24 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.demo.android.flb.demo.fragment.ContentFragment">
+
+    <TextView
+        android:id="@+id/tv_content_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dime_px2dip_80"
+        android:background="@color/title_background"
+        android:text="@string/hello_blank_fragment"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/dime_px2sp_36" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_content_title" />
+
+</android.support.constraint.ConstraintLayout>
